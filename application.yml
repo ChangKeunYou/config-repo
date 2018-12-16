@@ -1,3 +1,3 @@
 msa : 
-  name : config-server
+  name : hello world config-server
   port : 8888
