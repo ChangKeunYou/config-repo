@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:D:/dev/util/h2db/eureka2db
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+    hikari:
+      pool-name: EurekaHikariConnectionPool
+      minimum-idle: 10
+      maximum-pool-size: 20
+      idle-timeout: 25000
+      max-lifetime: 30000
+      validation-timeout: 10000
+      driver-class-name: org.h2.Driver
+      username: sa
+      password:
+    tomcat:
+      max-wait: 3000
+      max-active: 10
+      max-idle: 10
+      min-idle: 10
+      initial-size: 10
+      commit-on-return: true
+  jpa:
+    database-platform: H2
+    show-sql: true
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+     default-zone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: true
+    registry-sync-retries: 1
+    eviction-interval-timer-in-ms: 1000
