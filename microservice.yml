@@ -37,3 +37,7 @@ spring:
     username: you-dev
     password: 1234
     virtual-host: ccm-dev-vhost
+
+msa:
+ service : msa
+ port : 8080    
