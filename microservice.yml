@@ -34,6 +34,6 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: you-dea
+    username: you-dev
     password: 1234
     virtual-host: ccm-dev-vhost
