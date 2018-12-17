@@ -39,5 +39,5 @@ spring:
     virtual-host: ccm-dev-vhost
 
 msa:
- service : microservice
+ service : msaYck
  port : 8080    
