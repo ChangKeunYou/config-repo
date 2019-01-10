@@ -40,4 +40,4 @@ spring:
 
 msa:
  service : msaYck
- port : 8080    
+ port : 8080
