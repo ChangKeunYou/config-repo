@@ -37,6 +37,8 @@ spring:
     username: you-dev
     password: 1234
     virtual-host: ccm-dev-vhost
+  mvc:
+    locale: ko_KR
 
 msa:
  service : msaYck
